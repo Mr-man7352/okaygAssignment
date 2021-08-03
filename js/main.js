@@ -25,9 +25,9 @@ const employeeData = [
 ];
 
 // this function displays the, all employee record
-const showData = () => {
+const showData = (dataOfEmployee) => {
     let html = "";
-    employeeData.forEach(function (element) {
+    dataOfEmployee.forEach(function (element, index) {
         html += `
         <tr>
             <th scope="row">${element.id}</th>
@@ -38,7 +38,7 @@ const showData = () => {
             ${element.delete}</td>
             <td>
                 <span type="button" class="btn btn-outline-dark btn-sm mx-1">edit</span>
-                <span type="button" class="btn btn-outline-dark btn-sm mx-1">delete</span>
+                <span type="button" class="btn btn-outline-dark btn-sm mx-1" onclick="deleteRecord(${index});">delete</span>
             </td>
         </tr>
     `;
@@ -65,6 +65,7 @@ const formSubmitted = (idFormContainer, idOfInputs) => {
     let fromDelete = document.getElementById(idOfInputs[4]).value;
 
     let formData = {
+        index: employeeData.length + 1,
         id: fromId,
         candidateId: formCandidateId,
         laptopId: fromLaptopId,
@@ -73,9 +74,16 @@ const formSubmitted = (idFormContainer, idOfInputs) => {
     };
 
     employeeData.push(formData);
-
-    showData();
+    showData(employeeData);
 
 };
 
-showData();
+// this function delete the record
+const deleteRecord = (index) => {
+    console.log(employeeData[index])
+    employeeData.splice(index, 1)
+    showData(employeeData);
+
+}
+
+showData(employeeData);
