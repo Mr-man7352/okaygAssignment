@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title> My task </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                    <span class="btn btn-outline-dark btn-sm mx-1">AddRecord</span>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Nav2</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Nav3</a>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li> -->
+                <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li> -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-3 formDisplay" id="formContainer">
+        <form>
+            <input class="inputElement" type="number" placeholder="enterID">
+            <input class="inputElement" type="text" placeholder="candidateID">
+            <input class="inputElement" type="text" placeholder="LaptopID">
+            <input class="inputElement" type="date" placeholder="date">
+            <input class="inputElement" type="text" placeholder="t/f">
+            <button class="btn btn-outline-dark btn-sm mx-1">Add</button>
+        </form>
+    </div>
+
+
+
+    <!-- <div class="container my-3">
+        <h2>To do app</h2>
+        <form action="/app" method="POST">
+            <div class="mb-3">
+                <label for="title" class="form-label">Todo title</label>
+                <input type="text" name="title" class="form-control" id="title" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">Todo Description</label>
+                <input type="text" name="desc" class="form-control" id="desc">
+            </div>
+
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </form>
+    </div> -->
+
+    <div class="container my-3">
+        <h2>Your Employees</h2>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id </th>
+                    <th scope="col">candidateID </th>
+                    <th scope="col">LaptopID </th>
+                    <th scope="col">DateCreated </th>
+                    <th scope="col">Deleted </th>
+                    <th scope="col">Edit </th>
+                </tr>
+            </thead>
+            <tbody id="employeesData">
+
+
+                <tr>
+                    <th scope="row">1</th>
+                    <td>c1</td>
+                    <td>l1</td>
+                    <td>2021-03-24</td>
+                    <td>
+                        false </td>
+                    <td>
+                        <span type="button" class="btn btn-outline-dark btn-sm mx-1">edit</span>
+
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.inputElement {
+    border-radius: 10px;
+    border: 1px solid;
+    padding-left: 7px;
+}
+
+.formDisplay {
+    display: none;
+}
