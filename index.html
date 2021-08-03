@@ -59,12 +59,13 @@
 
     <div class="container my-3 formDisplay" id="formContainer">
         <!-- <form> -->
-        <input class="inputElement" type="number" placeholder="enterID">
-        <input class="inputElement" type="text" placeholder="candidateID">
-        <input class="inputElement" type="text" placeholder="LaptopID">
-        <input class="inputElement" type="date" placeholder="date">
-        <input class="inputElement" type="text" placeholder="t/f">
-        <button class="btn btn-outline-dark btn-sm mx-1" onclick="formSubmitted('formContainer');">Add</button>
+        <input class="inputElement" id="enterId" type="number" placeholder="enterID">
+        <input class="inputElement" id="candidateID" type="text" placeholder="candidateID">
+        <input class="inputElement" id="LaptopID" type="text" placeholder="LaptopID">
+        <input class="inputElement" id="date" type="date" placeholder="date">
+        <input class="inputElement" id="tf" type="text" placeholder="t/f">
+        <button class="btn btn-outline-dark btn-sm mx-1"
+            onclick="formSubmitted('formContainer',['enterId','candidateID','LaptopID','date','tf']);">Add</button>
         <!-- </form> -->
     </div>
 
@@ -98,7 +99,7 @@
                     <th scope="col">LaptopID </th>
                     <th scope="col">DateCreated </th>
                     <th scope="col">Deleted </th>
-                    <th scope="col">Edit </th>
+                    <th scope="col">Action </th>
                 </tr>
             </thead>
             <tbody id="employeesData">
