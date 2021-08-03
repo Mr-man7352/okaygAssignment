@@ -25,7 +25,8 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item active">
-                    <span class="btn btn-outline-dark btn-sm mx-1">AddRecord</span>
+                    <span class="btn btn-outline-dark btn-sm mx-1"
+                        onclick="formDisplay('formContainer');">AddRecord</span>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Nav2</a>
@@ -57,14 +58,14 @@
     </nav>
 
     <div class="container my-3 formDisplay" id="formContainer">
-        <form>
-            <input class="inputElement" type="number" placeholder="enterID">
-            <input class="inputElement" type="text" placeholder="candidateID">
-            <input class="inputElement" type="text" placeholder="LaptopID">
-            <input class="inputElement" type="date" placeholder="date">
-            <input class="inputElement" type="text" placeholder="t/f">
-            <button class="btn btn-outline-dark btn-sm mx-1">Add</button>
-        </form>
+        <!-- <form> -->
+        <input class="inputElement" type="number" placeholder="enterID">
+        <input class="inputElement" type="text" placeholder="candidateID">
+        <input class="inputElement" type="text" placeholder="LaptopID">
+        <input class="inputElement" type="date" placeholder="date">
+        <input class="inputElement" type="text" placeholder="t/f">
+        <button class="btn btn-outline-dark btn-sm mx-1" onclick="formSubmitted('formContainer');">Add</button>
+        <!-- </form> -->
     </div>
 
 

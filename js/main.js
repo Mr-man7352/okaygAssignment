@@ -44,3 +44,14 @@ employeeData.forEach(function (element) {
 let rows = document.getElementById('employeesData');
 
 rows.innerHTML = html;
+
+
+const formDisplay = (idFormContainer) => {
+    let formContainer = document.getElementById(idFormContainer)
+    formContainer.classList.remove('formDisplay')
+}
+
+const formSubmitted = (idFormContainer) => {
+    let formContainer = document.getElementById(idFormContainer)
+    formContainer.classList.add('formDisplay')
+}
