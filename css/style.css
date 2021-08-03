@@ -12,3 +12,11 @@
 .formDisplay {
     display: none;
 }
+
+.editDisplay {
+    display: none;
+}
+
+.centerItems {
+    text-align: center;
+}

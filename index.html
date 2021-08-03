@@ -34,21 +34,6 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Nav3</a>
                 </li>
-
-                <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li> -->
-                <!-- <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li> -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -57,35 +42,27 @@
         </div>
     </nav>
 
-    <div class="container my-3 formDisplay" id="formContainer">
-        <!-- <form> -->
-        <input class="inputElement" id="enterId" type="number" placeholder="enterID">
-        <input class="inputElement" id="candidateID" type="text" placeholder="candidateID">
-        <input class="inputElement" id="LaptopID" type="text" placeholder="LaptopID">
-        <input class="inputElement" id="date" type="date" placeholder="date">
-        <input class="inputElement" id="tf" type="text" placeholder="t/f">
-        <button class="btn btn-outline-dark btn-sm mx-1"
-            onclick="formSubmitted('formContainer',['enterId','candidateID','LaptopID','date','tf']);">Add</button>
-        <!-- </form> -->
+    <div class="container my-3 centerItems formDisplay" id="formContainer">
+        <h2>Add record to database:-</h2>
+        <div class="container my-3">
+            <input class="inputElement" id="enterId" type="number" placeholder="enterID">
+            <input class="inputElement" id="candidateID" type="text" placeholder="candidateID">
+            <input class="inputElement" id="LaptopID" type="text" placeholder="LaptopID">
+            <input class="inputElement" id="date" type="date" placeholder="date">
+            <input class="inputElement" id="tf" type="text" placeholder="t/f">
+            <button class="btn btn-outline-dark btn-sm mx-1"
+                onclick="formSubmitted('formContainer',['enterId','candidateID','LaptopID','date','tf']);">Add</button>
+
+        </div>
+    </div>
+
+
+    <div class="container my-3 centerItems editDisplay" id="editContainer">
+
     </div>
 
 
 
-    <!-- <div class="container my-3">
-        <h2>To do app</h2>
-        <form action="/app" method="POST">
-            <div class="mb-3">
-                <label for="title" class="form-label">Todo title</label>
-                <input type="text" name="title" class="form-control" id="title" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="desc" class="form-label">Todo Description</label>
-                <input type="text" name="desc" class="form-control" id="desc">
-            </div>
-
-            <button type="submit" class="btn btn-dark">Submit</button>
-        </form>
-    </div> -->
 
     <div class="container my-3">
         <h2>Your Employees</h2>
